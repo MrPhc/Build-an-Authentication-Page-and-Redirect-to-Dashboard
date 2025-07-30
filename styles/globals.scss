@@ -1,0 +1,23 @@
+:root {
+  --font-geist-sans: 'Geist', sans-serif;
+  --font-geist-mono: 'Geist Mono', monospace;
+
+  --color-bg: #0f2027;
+  --color-primary: #ff4e50;
+  --color-secondary: #f9d423;
+  --color-text: #ffffff;
+}
+
+.body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-geist-sans);
+  margin: 0;
+  padding: 0;
+}
+// .rtl {
+//   direction: rtl;
+//   text-align: right;
+//   font-family: 'Vazirmatn', sans-serif;
+//   unicode-bidi: plaintext; 
+// }
