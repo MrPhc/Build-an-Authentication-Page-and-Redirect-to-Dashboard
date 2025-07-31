@@ -1,23 +1,29 @@
 :root {
-  --font-geist-sans: 'Geist', sans-serif;
-  --font-geist-mono: 'Geist Mono', monospace;
-
-  --color-bg: #0f2027;
-  --color-primary: #ff4e50;
-  --color-secondary: #f9d423;
-  --color-text: #ffffff;
+  --bg-primary: linear-gradient(135deg, #f5f7fa, #e4e8f0, #c3cfe2);
+  --text-color: #333333;
+  --card-bg: rgba(255, 255, 255, 0.85);
+  --border-color: rgba(0, 0, 0, 0.1);
+  --highlight-color: #8e44ad;
+  --title-gradient: linear-gradient(90deg, #6a3093, #a044ff);
+  
+  --quantum-glass-blur: 16px;
+  --photon-intensity: 0.4;
 }
 
-.body {
-  background: var(--color-bg);
-  color: var(--color-text);
-  font-family: var(--font-geist-sans);
-  margin: 0;
-  padding: 0;
+.dark {
+  --bg-primary: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  --text-color: #f0f0f0;
+  --card-bg: rgba(30, 30, 30, 0.85);
+  --border-color: rgba(255, 255, 255, 0.15);
+  --highlight-color: #a18cd1;
+  --title-gradient: linear-gradient(90deg, #a18cd1, #fbc2eb);
+  
+  --quantum-glass-blur: 24px;
+  --photon-intensity: 0.2;
 }
-// .rtl {
-//   direction: rtl;
-//   text-align: right;
-//   font-family: 'Vazirmatn', sans-serif;
-//   unicode-bidi: plaintext; 
-// }
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-color);
+  transition: all 0.5s ease;
+}

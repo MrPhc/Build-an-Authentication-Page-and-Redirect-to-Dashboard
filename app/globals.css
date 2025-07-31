@@ -1,6 +1,30 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+   --bg-gradient: linear-gradient(-45deg, #1f1c2c, #928dab, #3a1c71, #d76d77);
+  --card-bg: rgba(255, 255, 255, 0.1);
+  --text-color: #fff;
+  --input-bg: rgba(255, 255, 255, 0.15);
+  --input-focus-bg: rgba(255, 255, 255, 0.25);
+  --button-bg: linear-gradient(45deg, #ff6b81, #ff4757);
+  --title-gradient: linear-gradient(90deg, #fff, #ff6b81);
+  --underline-gradient: linear-gradient(90deg, #ff6b81, #ff4757);
+  --error-bg: rgba(255, 0, 0, 0.15);
+  --error-border: #ff4757;
+  --theme-toggle-color: #fff;
+}
+
+
+.dark {
+  --bg-gradient: linear-gradient(-45deg, #0f0c1c, #82808b, #2a0c61, #c65d67);
+  --card-bg: rgba(30, 30, 30, 0.9);
+  --text-color: #f0f0f0;
+  --input-bg: rgba(50, 50, 50, 0.7);
+  --input-focus-bg: rgba(60, 60, 60, 0.9);
+  --button-bg: linear-gradient(45deg, #e05b71, #e03747);
+  --title-gradient: linear-gradient(90deg, #e0e0e0, #e05b71);
+  --underline-gradient: linear-gradient(90deg, #e05b71, #e03747);
+  --error-bg: rgba(200, 0, 0, 0.25);
+  --error-border: #e03747;
+  --theme-toggle-color: #f0f0f0;
 }
 
 @media (prefers-color-scheme: dark) {
